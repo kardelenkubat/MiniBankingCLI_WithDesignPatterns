@@ -1,9 +1,10 @@
+using MiniBankingCLI.Abstractions;
 using MiniBankingCLI.Domain.Enums;
 
 namespace MiniBankingCLI.Domain.Entities
 { 
   
-    public class Account
+    public class Account : IAccount
     {
         public Account(string ownerName, AccountType type ) {
             this.OwnerName = ownerName;
